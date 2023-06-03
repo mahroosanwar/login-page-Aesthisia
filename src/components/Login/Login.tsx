@@ -15,16 +15,16 @@ const Login: React.FC = () => {
             <div className="h-[555px] m-auto w-full">
               <Img
                 src="images/img_rectangle15.png"
-                className="relative h-[555px] m-auto object-cover rounded-[20px] w-full"
+                className="h-[555px] m-auto object-cover rounded-[20px] w-full"
                 alt="rectangleFifteen"
               />
               <Img
                 src="images/img_frame452.png"
-                className="h-[22px] md:h-auto mr-[55px] object-cover w-[54%]"
+                // className="h-[22px] md:h-auto mr-[55px] object-cover w-[54%]"
                 alt="frame452"
               />
               <Text
-                className="bottom-[29%] left-[3%] text-white_A700_b2 tracking-[1.44px]"
+                className="absolute bottom-[29%] left-[3%] text-white_A700_b2 tracking-[1.44px]"
                 as="h1"
                 variant="h1"
               >
