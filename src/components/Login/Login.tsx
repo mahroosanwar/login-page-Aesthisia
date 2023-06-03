@@ -58,7 +58,7 @@ const Login: React.FC = () => {
                 variant="h1"
               >
                 <span className="md:text-4xl sm:text-[34px] text-white_A700 text-[38px] font-poppins text-left font-semibold">
-                  100% Uptime😎
+                  100% Uptime 😎
                 </span>
                 <span className="md:text-[26px] sm:text-2xl text-gray_400 text-[28px] font-poppins text-left font-normal">
                   <>
@@ -144,10 +144,10 @@ const Login: React.FC = () => {
           {/* Right Side */}
           <div className="flex md:flex-1 flex-col font-inter gap-7 items-center justify-start w-[33%] md:w-full mr-24 md:mr-0">
             {/* Above Part */}
-            <div className="flex flex-col items-center justify-start w-[74%] md:w-full">
+            <div className="flex flex-col items-center justify-start w-[85%] md:w-full">
               <Img
                 src="images/img_petals1.png"
-                className="h-[49px] md:h-auto object-cover w-[27%] sm:w-full"
+                className="h-[63px] md:h-auto object-cover w-[29%] sm:w-full"
                 alt="petalsOne"
               />
               <Text
