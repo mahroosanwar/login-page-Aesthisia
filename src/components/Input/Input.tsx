@@ -29,6 +29,7 @@ export type InputProps = Omit<
     prefix: React.ReactNode;
     suffix: React.ReactNode;
     onChange: Function;
+    value: String;
     shape: keyof typeof shapes;
     variant: keyof typeof variants;
     size: keyof typeof sizes;
@@ -48,7 +49,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       prefix,
       suffix,
       onChange,
-
+      value = "",
       shape = "",
       variant = "",
       size = "",
@@ -77,6 +78,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             name={name}
             placeholder={placeholder}
             onChange={handleChange}
+            value={value}
             {...restProps}
           />
           {!!suffix && suffix}

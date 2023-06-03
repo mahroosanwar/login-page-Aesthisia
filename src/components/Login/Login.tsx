@@ -1,11 +1,30 @@
 import React from "react";
+import { useState } from "react";
 
 import Text from "../Text/Text";
 import Img from "../Img/Img";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
+import { BsEyeSlash } from "react-icons/bs";
 
 const Login: React.FC = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    console.log("Email:", email);
+    console.log("Password:", password);
+    alert("Email: " + email + "\nPassword: " + password);
+    setEmail('');
+    setPassword('');
+  };
+
+  const handlePasswordToggle = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <>
       <div className="bg-white_A700 flex flex-col font-poppins items-start justify-end mx-auto pt-5 px-5 w-full mt-14 md:mb-4 md:mt-6">
@@ -155,23 +174,33 @@ const Login: React.FC = () => {
                 shape="RoundedBorder10"
                 size="md"
                 variant="OutlineBluegray70083"
+                value={email}
+                onChange={(value: string) => setEmail(value)}
               ></Input>
               <Input
                 wrapClassName="flex mt-[22px] w-full"
                 className="font-inter font-normal leading-[normal] p-0 placeholder:text-blue_gray_500_87 text-black text-left text-sm w-full"
-                type="password"
+                type={showPassword ? "text" : "password"}
                 name="password"
                 placeholder="Enter your password"
                 suffix={
-                  <Img
-                    src="images/img_fluenteye20filled.svg"
-                    className="mt-auto mb-px ml-3"
-                    alt="fluent:eye-20-filled"
-                  />
+                  <div onClick={handlePasswordToggle}>
+                    {showPassword ? (
+                      <BsEyeSlash className="text-2xl" />
+                    ) : (
+                      <Img
+                        src="images/img_fluenteye20filled.svg"
+                        className="mt-auto mb-px ml-3"
+                        alt="fluent:eye-20-filled"
+                      />
+                    )}
+                  </div>
                 }
                 shape="RoundedBorder10"
                 size="sm"
                 variant="OutlineBluegray70083"
+                value={password}
+                onChange={(value: string) => setPassword(value)}
               ></Input>
               <a
                 href="https://login-page-aesthisia.netlify.app/"
@@ -186,6 +215,7 @@ const Login: React.FC = () => {
                 shape="RoundedBorder10"
                 size="sm"
                 variant="OutlineBlack9006b"
+                onClick={handleLogin}
               >
                 Log In
               </Button>
