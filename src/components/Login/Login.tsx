@@ -11,7 +11,7 @@ const Login: React.FC = () => {
       <div className="bg-white_A700 flex flex-col font-poppins items-start justify-end mx-auto pt-5 px-5 w-full">
         <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between mt-[7px] mx-auto md:px-5 w-full">
           {/* Left Side */}
-          <div className="h-[555px] relative w-full mr-52">
+          <div className="h-[555px] relative w-full mr-52 md:mr-0">
             <div className="h-[555px] m-auto w-full">
               <Img
                 src="images/img_rectangle15.png"
