@@ -138,7 +138,7 @@ const Login: React.FC = () => {
                 variant="OutlineBluegray70083"
               ></Input>
               <a
-                href="javascript:"
+                href="https://login-page-aesthisia.netlify.app/"
                 className="font-inter md:ml-[0] ml-[258px] mt-[7px] text-blue_gray_500_87 text-center"
               >
                 <Text as="h5" variant="h5">
