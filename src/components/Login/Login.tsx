@@ -54,31 +54,61 @@ const Login: React.FC = () => {
             </div>
             <div className="absolute flex flex-row sm:gap-10 h-max inset-[0] items-start justify-center m-auto w-[93%]">
               <div className="absolute left-0 bottom-0">
-                <Img
-                  src="images/img_internet11.svg"
-                  className="h-[15px] mt-0.5 w-[15px]"
-                  alt="internetEleven"
-                />
-                <Text className="ml-0.5 w-auto text-white" as="h5" variant="h5">
-                  aesthisia.com
-                </Text>
+                <a
+                  href="https://aesthisia.com/"
+                  target="_blank"
+                  className="flex"
+                  rel="noreferrer"
+                >
+                  <Img
+                    src="images/img_internet11.svg"
+                    className="h-[15px] mt-0.5 w-[15px] mr-1"
+                    alt="internetEleven"
+                  />
+
+                  <Text
+                    className="ml-0.5 w-auto text-white"
+                    as="h5"
+                    variant="h5"
+                  >
+                    aesthisia.com
+                  </Text>
+                </a>
               </div>
               <div className="flex flex-1 flex-row gap-1.5 h-[15px] md:h-auto items-start justify-end mt-[485px] w-full">
-                <Img
-                  src="images/img_linkedin.svg"
-                  className="h-[15px] w-[15px]"
-                  alt="linkedin"
-                />
-                <Img
-                  src="images/img_facebook1.svg"
-                  className="h-[15px] w-[15px]"
-                  alt="facebookOne"
-                />
-                <Img
-                  src="images/img_instagram1.svg"
-                  className="h-[15px] w-3.5"
-                  alt="instagramOne"
-                />
+                <a
+                  href="https://www.linkedin.com/company/aesthisia/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Img
+                    src="images/img_linkedin.svg"
+                    className="h-[15px] w-[15px]"
+                    alt="linkedin"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/aesthisia/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Img
+                    src="images/img_facebook1.svg"
+                    className="h-[15px] w-[15px]"
+                    alt="facebookOne"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/aesthisia/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Img
+                    src="images/img_instagram1.svg"
+                    className="h-[15px] w-3.5"
+                    alt="instagramOne"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -88,7 +118,7 @@ const Login: React.FC = () => {
             <div className="flex flex-col items-center justify-start w-[74%] md:w-full">
               <Img
                 src="images/img_petals1.png"
-                className="h-[49px] md:h-auto object-cover w-[23%] sm:w-full"
+                className="h-[49px] md:h-auto object-cover w-[27%] sm:w-full"
                 alt="petalsOne"
               />
               <Text
@@ -118,9 +148,9 @@ const Login: React.FC = () => {
             <div className="flex flex-col items-start justify-start w-full">
               <Input
                 wrapClassName="w-full"
-                className="font-inter font-normal leading-[normal] p-0 placeholder:text-blue_gray_500_87 text-blue_gray_500_87 text-left text-sm w-full"
+                className="font-inter font-normal leading-[normal] p-0 placeholder:text-blue_gray_500_87 text-black text-left text-sm w-full"
                 type="email"
-                name="group9001"
+                name="email"
                 placeholder="Enter your email"
                 shape="RoundedBorder10"
                 size="md"
@@ -128,9 +158,9 @@ const Login: React.FC = () => {
               ></Input>
               <Input
                 wrapClassName="flex mt-[22px] w-full"
-                className="font-inter font-normal leading-[normal] p-0 placeholder:text-blue_gray_500_87 text-blue_gray_500_87 text-left text-sm w-full"
+                className="font-inter font-normal leading-[normal] p-0 placeholder:text-blue_gray_500_87 text-black text-left text-sm w-full"
                 type="password"
-                name="group9002"
+                name="password"
                 placeholder="Enter your password"
                 suffix={
                   <Img
