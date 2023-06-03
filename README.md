@@ -1,3 +1,39 @@
+# Login Page Aesthisia
+
+Developed by Mahroos Anwar
+
+This project is a login page developed using ReactJS, TypeScript, and Tailwind CSS. It aims to replicate a given design in Figma(responsive for desktop and medium screen devices as asked). The webpage includes functionality to hide the password and performs email and password validation. When the login button is clicked, an alert notification is displayed.
+
+## Deployment
+
+The project is deployed and accessible at the following link:
+
+[Login-page-aesthisia.netlify.app](https://login-page-aesthisia.netlify.app)
+
+
+## Source Code
+
+The source code for the project is available on GitHub:
+
+[github.com/mahroosanwar/login-page-Aesthisia](https://github.com/mahroosanwar/login-page-Aesthisia)
+
+
+## Screenshots
+
+1. Developed a similar webpage as given as an assignment in Figma (responsive for desktop and medium screen devices as asked). And Logo and icon navigate to respective website and social media.
+
+   ![Screenshot 1](https://i.postimg.cc/BvkGTVdM/login-page-aesthisia-front.png)
+
+2. Add functionality to hide the password.
+
+   ![Screenshot 2](https://i.postimg.cc/SKJhzhtn/login-page-aesthisia-hide.png)
+
+3. Add email and password validation. Login gives an alert notification when the login button is clicked.
+
+   ![Screenshot 3](https://i.postimg.cc/NFwqVrGX/login-page-aesthisia-validation.png)
+   ![Screenshot 4](https://i.postimg.cc/G2DnqjRr/login-page-aesthisia-submit.png)
+
+   
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
