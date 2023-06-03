@@ -14,11 +14,21 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!password || password.length < 6) {
+      alert("Please enter a password with at least 6 characters.");
+      return;
+    }
+
     console.log("Email:", email);
     console.log("Password:", password);
     alert("Email: " + email + "\nPassword: " + password);
-    setEmail('');
-    setPassword('');
+    setEmail("");
+    setPassword("");
   };
 
   const handlePasswordToggle = () => {
