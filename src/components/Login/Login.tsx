@@ -12,15 +12,15 @@ const Login: React.FC = () => {
         <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between mt-[7px] mx-auto md:px-5 w-full">
           {/* Left Side */}
           <div className="h-[555px] relative w-full mr-52 md:mr-0">
-            <div className="h-[555px] m-auto w-full">
+            <div className="relative h-[555px] m-auto w-full">
               <Img
                 src="images/img_rectangle15.png"
-                className="h-[555px] m-auto object-cover rounded-[20px] w-full"
+                className="absolute h-[555px] m-auto object-cover rounded-[20px] w-full"
                 alt="rectangleFifteen"
               />
               <Img
                 src="images/img_frame452.png"
-                // className="h-[22px] md:h-auto mr-[55px] object-cover w-[54%]"
+                className="absolute h-auto md:h-auto mr-[55px] object-cover w-[10%] m-5"
                 alt="frame452"
               />
               <Text
@@ -46,6 +46,11 @@ const Login: React.FC = () => {
                   Management
                 </span>
               </Text>
+              <div className="absolute top-[453px] left-[40px] w-[37.89px] h-1.5">
+                <div className="absolute top-[5.49px] left-[37.89px] rounded-[74.42px] bg-gray-200 w-[4.87px] h-[5.49px] [transform:_rotate(180deg)] [transform-origin:0_0]" />
+                <div className="absolute top-[5.49px] left-[29.23px] rounded-[74.42px] bg-gray-200 w-[4.87px] h-[5.49px] [transform:_rotate(180deg)] [transform-origin:0_0]" />
+                <div className="absolute top-[6px] left-[20px] rounded-[74.42px] bg-white w-5 h-1.5 [transform:_rotate(180deg)] [transform-origin:0_0]" />
+              </div>
             </div>
             <div className="absolute flex flex-row sm:gap-10 h-max inset-[0] items-start justify-center m-auto w-[93%]">
               <div className="absolute left-0 bottom-0">
